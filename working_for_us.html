@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="layout.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+/* Center website */
+.main {
+  max-width: 2000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 7px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: #b0ccdd;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  height:50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: black;
+  color: white;
+}
+
+.fa-twitter {
+  background: black;
+  color: white;
+}
+
+.fa-linkedin {
+  background: black;
+  color: white;
+}
+
+.fa-youtube {
+  background: black;
+  color: white;
+}
+
+.fa-instagram {
+  background: black;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: black;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+  background: black;
+  color: white;
+}
+
+.fa-android {
+  background: black;
+  color: white;
+}
+
+
+.fa-foursquare {
+  background: black;
+  color: white;
+}
+
+
+.fa-rss {
+  background: black;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1><img src="bannerr.png" width="2200" height="300" alt=""/></h1>
+  <p>&nbsp;</p>
+</div>
+
+<div class="topnav">
+  <a href="index.html">About Us</a>
+  <a href="working_for_us.html">Working for us</a>
+  <a href="job_specification.html">Job Specification</a>
+  <a href="training.html">Training</a>
+  <a href="apply.html">Apply</a>
+</div>
+
+
+
+
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+  <hr>
+  
+  <h2>People who worked with us</h2>
+  <p>Here are the details of some people who worked with us</p>
+  
+  <!-- Gallery Grid -->
+  <div class="row">
+    <div class="column">
+      <div class="content">
+        <img src="people.1.jpg" alt="Mountains" style="width:100%">
+        <h3>Christina</h3>
+        <p>She is a web developer in our company. She started working with us 2 years ago now she has been prmoted because of her outstanding work. she will be training our junior web developers.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+      <img src="people.2.jpg" alt="Lights" style="width:100%">
+        <h3>Arman</h3>
+        <p>Arman has worked with us for 5 years as a Data Scientist. He has been promoted last year and he will be leading the data scientist gruop for 1 year to become the permanent leader.  </p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+      <img src="people.3.jpg" alt="Nature" style="width:100%">
+        <h3>Alex</h3>
+        <p>Alex is a junior programmer who is doing really well. He will be promoted soon after the project he has been signe for. His current project is to do with leadership as he is doing really well.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+      <img src="people.4.jpg" alt="Mountains" style="width:100%">
+        <h3>Lexi</h3>
+        <p>Lexi is our new grapic leader. She has been working for us for 3 years Now. She is doing really well and will be training the junior Graphic designers with her tips and tricks</p>
+      </div>
+    </div>
+  <!-- END GRID -->
+  
+  
+  <!-- END MAIN -->
+  </div>
+
+
+
+  </script>
+
+</div>
+<div class="footer">
+	<h2>Follow us on the following social media sites ; </h2>
+        <a href="https://en-gb.facebook.com/" class="fa fa-facebook" target="_blank"></a>
+<a href="https://uk.linkedin.com/" class="fa fa-linkedin" target="_blank"></a>
+<a href="https://www.youtube.com/" class="fa fa-youtube" target="_blank"></a>
+<a href="https://www.instagram.com/" class="fa fa-instagram" target="_blank"></a>
+<a href="https://www.snapchat.com/" class="fa fa-snapchat-ghost" target="_blank"></a>
+<a href="https://www.skype.com/en/" class="fa fa-skype" target="_blank"></a>
+
+
+</body>
+</html>
+
+
